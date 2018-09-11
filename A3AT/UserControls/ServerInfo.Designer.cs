@@ -28,69 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblServerName = new System.Windows.Forms.Label();
+            this.lblServerInfo = new System.Windows.Forms.Label();
+            this.cmdConnect = new System.Windows.Forms.Button();
+            this.cmdModify = new System.Windows.Forms.Button();
+            this.cmdDelete = new System.Windows.Forms.Button();
+            this.lblDisplayName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblServerName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblServerName.AutoSize = true;
+            this.lblServerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServerName.Location = new System.Drawing.Point(3, 0);
+            this.lblServerName.Name = "lblServerName";
+            this.lblServerName.Size = new System.Drawing.Size(141, 25);
+            this.lblServerName.TabIndex = 0;
+            this.lblServerName.Text = "ServerName";
             // 
-            // label2
+            // lblServerInfo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lblServerInfo.AutoSize = true;
+            this.lblServerInfo.Location = new System.Drawing.Point(5, 25);
+            this.lblServerInfo.Name = "lblServerInfo";
+            this.lblServerInfo.Size = new System.Drawing.Size(59, 13);
+            this.lblServerInfo.TabIndex = 1;
+            this.lblServerInfo.Text = "Server Info";
             // 
-            // button1
+            // cmdConnect
             // 
-            this.button1.Location = new System.Drawing.Point(3, 74);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdConnect.Location = new System.Drawing.Point(3, 54);
+            this.cmdConnect.Name = "cmdConnect";
+            this.cmdConnect.Size = new System.Drawing.Size(75, 23);
+            this.cmdConnect.TabIndex = 2;
+            this.cmdConnect.Text = "Connect";
+            this.cmdConnect.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // cmdModify
             // 
-            this.button2.Location = new System.Drawing.Point(84, 74);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmdModify.Location = new System.Drawing.Point(84, 54);
+            this.cmdModify.Name = "cmdModify";
+            this.cmdModify.Size = new System.Drawing.Size(75, 23);
+            this.cmdModify.TabIndex = 3;
+            this.cmdModify.Text = "Modify";
+            this.cmdModify.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // cmdDelete
             // 
-            this.button3.Location = new System.Drawing.Point(242, 74);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.cmdDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdDelete.Location = new System.Drawing.Point(227, 54);
+            this.cmdDelete.Name = "cmdDelete";
+            this.cmdDelete.Size = new System.Drawing.Size(75, 23);
+            this.cmdDelete.TabIndex = 4;
+            this.cmdDelete.Text = "Delete";
+            this.cmdDelete.UseVisualStyleBackColor = true;
+            // 
+            // lblDisplayName
+            // 
+            this.lblDisplayName.AutoSize = true;
+            this.lblDisplayName.Location = new System.Drawing.Point(5, 38);
+            this.lblDisplayName.Name = "lblDisplayName";
+            this.lblDisplayName.Size = new System.Drawing.Size(69, 13);
+            this.lblDisplayName.TabIndex = 5;
+            this.lblDisplayName.Text = "DisplayName";
             // 
             // ServerInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblDisplayName);
+            this.Controls.Add(this.cmdDelete);
+            this.Controls.Add(this.cmdModify);
+            this.Controls.Add(this.cmdConnect);
+            this.Controls.Add(this.lblServerInfo);
+            this.Controls.Add(this.lblServerName);
             this.Name = "ServerInfo";
-            this.Size = new System.Drawing.Size(320, 100);
+            this.Size = new System.Drawing.Size(305, 80);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,10 +111,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblServerName;
+        private System.Windows.Forms.Label lblServerInfo;
+        private System.Windows.Forms.Button cmdConnect;
+        private System.Windows.Forms.Button cmdModify;
+        private System.Windows.Forms.Button cmdDelete;
+        private System.Windows.Forms.Label lblDisplayName;
     }
 }

@@ -20,12 +20,12 @@ namespace A3AT.UserControls
         {
             set
             {
-                label1.Text = value;
+                lblServerName.Text = value;
             }
 
             get
             {
-                return label1.Text;
+                return lblServerName.Text;
             }
         }
 
@@ -33,12 +33,24 @@ namespace A3AT.UserControls
         {
             set
             {
-                label2.Text = value;
+                lblServerInfo.Text = value;
             }
 
             get
             {
-                return label2.Text;
+                return lblServerInfo.Text;
+            }
+        }
+
+        public string LblServerDisplayName
+        {
+            set
+            {
+                lblDisplayName.Text = value;
+            }
+            get
+            {
+                return lblDisplayName.Text;
             }
         }
     }
