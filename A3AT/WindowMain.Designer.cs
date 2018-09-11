@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.gbServers = new System.Windows.Forms.GroupBox();
             this.cmdExit = new System.Windows.Forms.Button();
             this.cmdConfirm = new System.Windows.Forms.Button();
+            this.gbServers = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -43,15 +43,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Arma 3 Administrator Tools";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // gbServers
-            // 
-            this.gbServers.Location = new System.Drawing.Point(12, 78);
-            this.gbServers.Name = "gbServers";
-            this.gbServers.Size = new System.Drawing.Size(326, 331);
-            this.gbServers.TabIndex = 1;
-            this.gbServers.TabStop = false;
-            this.gbServers.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cmdExit
             // 
@@ -72,15 +63,23 @@
             this.cmdConfirm.Text = "Add Server";
             this.cmdConfirm.UseVisualStyleBackColor = true;
             // 
+            // gbServers
+            // 
+            this.gbServers.AutoScroll = true;
+            this.gbServers.Location = new System.Drawing.Point(12, 78);
+            this.gbServers.Name = "gbServers";
+            this.gbServers.Size = new System.Drawing.Size(326, 331);
+            this.gbServers.TabIndex = 4;
+            // 
             // WindowMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.gbServers);
             this.Controls.Add(this.cmdConfirm);
             this.Controls.Add(this.cmdExit);
-            this.Controls.Add(this.gbServers);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WindowMain";
@@ -93,9 +92,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox gbServers;
         private System.Windows.Forms.Button cmdExit;
         private System.Windows.Forms.Button cmdConfirm;
+        private System.Windows.Forms.Panel gbServers;
     }
 }
 
